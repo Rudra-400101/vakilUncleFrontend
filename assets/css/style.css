@@ -29,6 +29,7 @@ h6 {
     margin-top: 0px;
     font-style: normal;
     font-weight: 500;
+    text-align: start;
     text-transform: normal
 }
 
@@ -740,6 +741,44 @@ hr {
     overflow: hidden
 }
 
+.btn-sm{
+    background: #84bce5;
+    font-family: "Jost", sans-serif;
+    text-transform: inherit !important;
+    padding: 18px 15px;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    border-radius: 35px;
+    line-height: 1;
+    line-height: 0;
+    cursor: pointer;
+    -moz-user-select: none;
+    transition: color 0.4s linear;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden
+}
+.btn-sm::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 102%;
+    height: 102%;
+    background: #cf0f0f;
+    z-index: 1;
+    border-radius: 0px;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0);
+    border-radius: 0px
+}
 .btn::before {
     content: "";
     position: absolute;
