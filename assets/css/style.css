@@ -1483,9 +1483,10 @@ hr {
 @media (max-width: 575px) {
     .header-area .header-mid .menu-wrapper .header-right {
         position: absolute;
-        top: 165px;
+        top: 20px;
         z-index: 3;
-        right: 14px
+        right: 14px;
+        z-index: 999;
     }
 }
 
@@ -1578,7 +1579,7 @@ hr {
     position: absolute;
     right: 0px;
     width: 100%;
-    z-index: 99
+    z-index: 99;
 }
 
 #search_input_box {
@@ -3127,19 +3128,97 @@ hr {
 
 @media only screen and (max-width: 552px){
     .category-listing {
-        visibility: hidden;
         display: none;
+    }
+    .imageProfileSection{
+        height: 150px;
+        width: 100%;
+    }
+    .smallBannerImage{
+        height: 150px;
     }
 }
 
+#ViewByLocation{
+    margin-top: 9px;
+}
+#ViewByLocation a{
+ font-size: 10px;
+ color: green !important;
+ border: 1px solid green;
+ padding: 12px;
+ margin-top: 5px;
+ border-radius: 5px;
+ transition: .5s all;
+ translate: 10px 100px;
+}
+
+#ViewByLocation a:hover{
+ font-size: 10px;
+ color: white !important;
+ border: 1px solid green;
+ background-color: green;
+ transition: .5s all;
+ font-weight: bold;
+ padding: 12px;
+ margin-top: 5px;
+ border-radius: 5px;
+}
+
+
+
+.btn-outline{
+    background: white;
+    font-family: "Jost", sans-serif;
+    padding: 10px;
+    color: #84bce5 ;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px ;
+    font-weight: 500 ;
+    border: 2px solid #84bce5;
+    border-radius: 5px;
+    line-height: 1;
+    cursor: pointer;
+    -moz-user-select: none;
+    transition: color 0.4s linear;
+    position: relative;
+    z-index: 1;
+    overflow: hidden
+}
+
+.btn-outline:hover{
+    background: #84bce5;
+    font-family: "Jost", sans-serif;
+    padding: 10px;
+    color: white ;
+    display: inline-block;
+    font-size: 20px ;
+    font-weight: 500;
+    border: 2px solid #84bce5;
+    border-radius: 5px;
+    line-height: 1;
+    cursor: pointer;
+    -moz-user-select: none;
+    transition: color 0.4s linear;
+    position: relative;
+    z-index: 1;
+    overflow: hidden
+}
 @media only screen and (min-width:552px) {
     .filterContainer{
         display: none;
         visibility: hidden;
     }
-    .category-listing {
-        visibility: visible;
+    #filterContainerBox{
         display: block;
+    }
+}
+
+@media screen and(max-width: 552px) {
+    .filterContainer{
+        display: block;
+        visibility: visible;
     }
 }
 .category-listing .single-listing .select-job-items2 .nice-select {

@@ -79,7 +79,8 @@
 
 .slicknav_nav li,
 .slicknav_nav ul {
-    display: block
+    display: block;
+    visibility: visible;
 }
 
 .slicknav_nav .slicknav_arrow {

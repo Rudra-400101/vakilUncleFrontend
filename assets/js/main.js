@@ -53,6 +53,12 @@
     });
 
 
+    //filter Toggle 
+    $("#filter_1").on("click", function(){
+      $("#filterContainerBox").slideToggle();
+    
+    })
+
 
 //4. h1-hero-active
   function mainSlider() {
