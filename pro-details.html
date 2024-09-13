@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="assets/css/slick.css" />
   <link rel="stylesheet" href="assets/css/nice-select.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+
   <script nonce="655f2913-df3b-477a-a9f0-cdaa259f619a">
     try {
       (function (w, d) {
@@ -127,136 +129,19 @@
     body {
       font-family: sans-serif;
     }
-    .border {
-      border: 2px solid white;
-    }
 
-    .border-none {
-      border: none;
-    }
-
-    .gap {
-      gap: 10%;
-    }
-
-    .bg-white {
-      background-color: white;
-    }
-
-    .text-light {
-      color: white;
-    }
-
-    .fw-bold {
-      font-weight: 600 !important;
-    }
-
-    .text-primary {
-      color: #85bde6 !important;
-    }
-    .text-success{
-color:rgb(6, 185, 6) !important;
-    }
-.bg-primary{
-  background: #85bde6;
-}
-.btn{
-  transition: .2s;
-
-}
-.btn:hover{
-  transform: translateY(-3px);
-  scale:1.02;
-  color: #03506a !important;
-}
-    .text-justify {
-      text-align: justify;
-    }
-
-    .text-warning {
-      color: #fc9935 !important;
-    }
 
     .border-bottom {
       border-bottom: 2px solid white;
-    }
-
-    .flex-column {
-      flex-direction: column;
-    }
-
-    .w-50 {
-      width: 50% !important;
-    }
-
-    .w-100 {
-      width: 100% !important;
-    }
-
-    .p-1 {
-      padding: 5px 5px;
-    }
-
-    .p-2 {
-      padding: 10px 10px;
-    }
-
-    .p-3 {
-      padding: 15px 15px;
-    }
-
-    .radius {
-      border-radius: 7px;
-    }
-
-    .circle {
-      border-radius: 50%;
     }
 
     .border-box {
       box-sizing: border-box;
     }
 
-    .text-left {
-      text-align: left;
-    }
-
-    .line-height-24 {
-      line-height: 24px !important;
-    }
-
-    .text-dark {
-      color: #333 !important;
-    }
-
     .overflow-hidden {
       overflow: hidden;
     }
-
-    .mt-0 {
-      margin-top: 0;
-    }
-
-    .mt-25 {
-      margin-top: 25px;
-    }
-
-    .pr-25 {
-      padding-right: 20px;
-    }
-
-
-    .pl-50 {
-      padding-left: 10vw;
-    }
-.pt-50{
-padding-top: 50px;
-}
-    .float-left {
-      float: left !important;
-    }
-
-    
 
     .profile {
       background-color: #f0f0f0;
@@ -266,7 +151,7 @@ padding-top: 50px;
       justify-content: center;
       align-items: center;
       margin-right: 10px;
-      border-radius: 5px;
+      border-rounded: 5px;
     }
 
     .profile h1 {
@@ -309,46 +194,40 @@ padding-top: 50px;
       margin-right: 5px;
     }
 
-    .mb-10 {
-      margin-bottom: 10px;
-    }
-
-    .bg-silver {
-      background: #f5f5f5 !important;
-    }
-
-    .ml-20 {
-      margin-left: 20px;
-    }
-
     .text-italic {
       font-style: italic !important;
     }
 
-    .text-gray {
-      color: gray !important;
-    }
-    .bg-none{
+    .bg-none {
       background: none;
     }
-    .border-bottom-gray{
+
+    .border-bottom-gray {
       border-bottom: 2px solid #cccccc;
     }
-    .radius-none{
-      border-radius:0 !important;
+
+    .rounded-none {
+      border-rounded: 0 !important;
     }
 
-    .h-50{
-      height: 60vh;
+    .bg-white {
+      background-color: white;
     }
-   .my-5{
-    margin: 8vh 0;
+
+    .text-semi-primary {
+      color: #85bde6 !important;
+    }
+
+    .bg-semi-primary {
+      background-color: #85bde6 !important;
+    }
+   .formHeader{
+    text-shadow: 1px 1px 2px #2B3B4E;
    }
-   .bg-light{
-    background-color: white !important;
-   }
-   .pl-2{
-    padding-left:29px !important;
+   #formData{
+    background-color: rgba(7, 134, 253, 0.024);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
    }
   </style>
 </head>
@@ -539,29 +418,30 @@ padding-top: 50px;
     </div>
   </header>
   <main>
-    <div class="services-area2 pt-50 mt-10">
+    <div class="services-area2 mt-5 p-0">
       <div class="container">
-        <div class="row ">
-          <div class="col-xl-12">
-            <div class="row">
-              <div class="col-xl-12">
-                <div class="single-services pl-2 d-flex bg-light align-items-center w-100 mb-0 ">
-                  <div class="features-img ">
-                    <div class="border p-2 radius">
-                      <img src="assets/img/gallery/vakil4.png" alt class="radius border-none" width="100" />
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="row"> 
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="single-services p-0 d-flex bg-none bg-white align-items-center w-100 mb-0 ">
+                  <div class="features-img">
+                    <div class="border p-2 rounded">
+                      <img src="assets/img/gallery/vakil4.png" alt class="rounded border-none" width="100" />
                     </div>
-                    <div class="border radius p-1 mt-3 text-center fw-bold text-primary">
-                      <svg fill="#228BE6"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="20px" height="20px">
+                    <div class="border rounded p-1 mt-3 text-center fw-bold text-primary">
+                      <svg fill="#228BE6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="20px"
+                        height="20px">
                         <path
                           d="M62.991,18.668c1.854,1.2,2.386,3.677,1.186,5.531l-4.642,7.173C59.829,32.872,60,34.415,60,36	c0,13.25-10.75,24-24,24S12,49.25,12,36s10.75-24,24-24c5.99,0,11.46,2.2,15.67,5.83L37.48,39.76l-8.15-9.33	c-1.09-1.25-2.98-1.38-4.23-0.29c-1.25,1.09-1.38,2.98-0.29,4.23l10.76,12.34c0.58,0.65,1.4,1.03,2.26,1.03	c0.08,0,0.15-0.01,0.22-0.01c0.94-0.07,1.79-0.57,2.3-1.36l17.11-26.516C58.66,17.998,61.135,17.467,62.991,18.668z" />
                       </svg>
-                      Verified</div>
+                      Verified
+                    </div>
                   </div>
-                  <div class="features-caption d-flex flex-column gap w-100">
+                  <div class="features-caption mt-10 d-flex flex-column gap w-100">
                     <div class="w-100 d-flex gap border-bottom-gray">
                       <div class="w-50">
-                        <h3 class="text-primary">Evan Winter</h3>
+                        <h3 class="text-semi-primary">Evan Winter</h3>
                         <div class="review">
                           <div class="rating">
                             <i class="fas fa-star text-warning"></i>
@@ -575,7 +455,7 @@ padding-top: 50px;
                         <div class="price"></div>
                       </div>
                       <div class="w-50">
-                        <div class="bg-primary p-2 radius fw-bold text-light">
+                        <div class="bg-semi-primary p-2 fw-bold text-light text-center rounded">
                           View Contact Number - 997***087
                         </div>
                         <!-- <a href="#" class="white-btn mr-10">Add to Cart</a>
@@ -583,93 +463,135 @@ padding-top: 50px;
                       </div>
                     </div>
                     <div class="d-flex w-100 flex-column flex-wrap">
-                      <div class="row w-100 mt-3 text-light">
+                      <div class="row w-100 mt-3 text-semi-primary">
+                        <div class="col-sm-12 col-md-12">
+                          <div class="row">
+                            <div class="mt-3 col-md-6">
+                              <div class="row">
+                                <div class=" col-md-12">
+                                  <div class="row">
+                                    <div class=" col-6">
+                                      <svg height="20px" width="20px" version="1.1" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 512 512" xml:space="preserve">
+                                        <circle style="fill:#324A5E;" cx="256" cy="256" r="256" />
+                                        <path style="fill:#2B3B4E;" d="M504.601,317.269L330.128,142.796l-72.692-11.205l-80.162,80.162l72.252,165.348l-114.067,26.293
+l107.872,108.292c4.198,0.205,8.42,0.314,12.667,0.314C376.265,512,477.141,429.063,504.601,317.269z" />
+                                        <ellipse style="fill:#90DFAA;" cx="256" cy="398.222" rx="123.259" ry="24.652" />
+                                        <path style="fill:#6FC186;" d="M256,373.57c-0.193,0-0.381,0.003-0.574,0.003v49.299c0.193,0,0.381,0.003,0.574,0.003
+c68.074,0,123.259-11.036,123.259-24.652C379.259,384.608,324.074,373.57,256,373.57z" />
+                                        <path style="fill:#FFD15D;" d="M256,108.606c-54.269,0-98.263,43.994-98.263,98.263c0,83.375,98.263,196.525,98.263,196.525
+s98.263-107.941,98.263-196.525C354.263,152.6,310.269,108.606,256,108.606z M256,256c-27.134,0-49.131-21.997-49.131-49.131
+s21.997-49.131,49.131-49.131s49.131,21.997,49.131,49.131S283.134,256,256,256z" />
+                                        <path style="fill:#F9B54C;" d="M354.263,206.869c0-54.269-43.994-98.263-98.263-98.263c-0.193,0-0.381,0.014-0.574,0.014v49.131
+c0.191-0.002,0.381-0.014,0.574-0.014c27.134,0,49.131,21.997,49.131,49.131S283.134,256,256,256c-0.193,0-0.383-0.012-0.574-0.014
+v146.739c0.371,0.434,0.574,0.669,0.574,0.669S354.263,295.453,354.263,206.869z" />
+                                      </svg>
+                                      Location:
+                                    </div>
+                                    <div class="col-6">
+                                      Kailash Hills, Delhi
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mt-3 col-md-6">
+                              <div class="row">
+                                <div class=" col-md-12">
+                                  <div class="row">
+                                    <div class=" col-6">
+                                      <svg width="20px" height="20px" viewBox="0 0 1024 1024" class="icon" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                          d="M843.2 876.7H180.8c-13.5 0-24.5-11-24.5-24.5V501.7h711.3v350.4c0.1 13.6-10.9 24.6-24.4 24.6z"
+                                          fill="#68A240" />
+                                        <path
+                                          d="M842 882.4H182c-17.3 0-31.4-14.1-31.4-31.4V496h722.9v355c-0.1 17.3-14.2 31.4-31.5 31.4zM162.1 507.5V851c0 11 8.9 19.9 19.9 19.9h660c11 0 19.9-8.9 19.9-19.9V507.5H162.1z"
+                                          fill="#333336" />
+                                        <path
+                                          d="M485.7 835.9H208c-6.2 0-11.2-5-11.2-11.2V521.8H497v302.8c0 6.2-5 11.3-11.3 11.3z"
+                                          fill="#68A240" />
+                                        <path
+                                          d="M485.2 841.6H208.5c-9.7 0-17.5-7.9-17.5-17.5V516h311.8v308.1c0 9.7-7.9 17.5-17.6 17.5zM202.5 527.5v296.6c0 3.3 2.7 6 6 6h276.7c3.3 0 6-2.7 6-6V527.5H202.5z"
+                                          fill="#333336" />
 
-                        <table class="w-50 ml-20 w-100">
-                        
-                          <tr>
-                            <td class="text-primary">
-                              <svg height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
-                              <circle style="fill:#324A5E;" cx="256" cy="256" r="256" />
-                              <path style="fill:#2B3B4E;" d="M504.601,317.269L330.128,142.796l-72.692-11.205l-80.162,80.162l72.252,165.348l-114.067,26.293
-    l107.872,108.292c4.198,0.205,8.42,0.314,12.667,0.314C376.265,512,477.141,429.063,504.601,317.269z" />
-                              <ellipse style="fill:#90DFAA;" cx="256" cy="398.222" rx="123.259" ry="24.652" />
-                              <path style="fill:#6FC186;" d="M256,373.57c-0.193,0-0.381,0.003-0.574,0.003v49.299c0.193,0,0.381,0.003,0.574,0.003
-    c68.074,0,123.259-11.036,123.259-24.652C379.259,384.608,324.074,373.57,256,373.57z" />
-                              <path style="fill:#FFD15D;" d="M256,108.606c-54.269,0-98.263,43.994-98.263,98.263c0,83.375,98.263,196.525,98.263,196.525
-    s98.263-107.941,98.263-196.525C354.263,152.6,310.269,108.606,256,108.606z M256,256c-27.134,0-49.131-21.997-49.131-49.131
-    s21.997-49.131,49.131-49.131s49.131,21.997,49.131,49.131S283.134,256,256,256z" />
-                              <path style="fill:#F9B54C;" d="M354.263,206.869c0-54.269-43.994-98.263-98.263-98.263c-0.193,0-0.381,0.014-0.574,0.014v49.131
-    c0.191-0.002,0.381-0.014,0.574-0.014c27.134,0,49.131,21.997,49.131,49.131S283.134,256,256,256c-0.193,0-0.383-0.012-0.574-0.014
-    v146.739c0.371,0.434,0.574,0.669,0.574,0.669S354.263,295.453,354.263,206.869z" />
-                            </svg>
-                            Location: 
-                            </td>
-                            <td class="text-primary">Kailash Hills, Delhi</td>
-                          
-                            <td class="text-primary">
-                              <svg width="20px" height="20px" viewBox="0 0 1024 1024" class="icon"
-                              version="1.1" xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M843.2 876.7H180.8c-13.5 0-24.5-11-24.5-24.5V501.7h711.3v350.4c0.1 13.6-10.9 24.6-24.4 24.6z"
-                                fill="#68A240" />
-                              <path
-                                d="M842 882.4H182c-17.3 0-31.4-14.1-31.4-31.4V496h722.9v355c-0.1 17.3-14.2 31.4-31.5 31.4zM162.1 507.5V851c0 11 8.9 19.9 19.9 19.9h660c11 0 19.9-8.9 19.9-19.9V507.5H162.1z"
-                                fill="#333336" />
-                              <path d="M485.7 835.9H208c-6.2 0-11.2-5-11.2-11.2V521.8H497v302.8c0 6.2-5 11.3-11.3 11.3z"
-                                fill="#68A240" />
-                              <path
-                                d="M485.2 841.6H208.5c-9.7 0-17.5-7.9-17.5-17.5V516h311.8v308.1c0 9.7-7.9 17.5-17.6 17.5zM202.5 527.5v296.6c0 3.3 2.7 6 6 6h276.7c3.3 0 6-2.7 6-6V527.5H202.5z"
-                                fill="#333336" />
-                              
-                              <path
-                                d="M806.2 589.5H217.8c-34 0-61.5-27.5-61.5-61.5V346.5c0-4.8 3.9-8.7 8.7-8.7h693.8c4.8 0 8.7 3.9 8.7 8.7V528c0.2 34-27.4 61.5-61.3 61.5z"
-                                fill="#FFD632" />
-                              <path
-                                d="M803.3 595.3H220.7c-38.7 0-70.1-31.5-70.1-70.1V346.9c0-8.2 6.7-14.9 14.9-14.9h693c8.2 0 14.9 6.7 14.9 14.9v178.2c0 38.7-31.4 70.2-70.1 70.2zM165.5 343.5c-1.9 0-3.4 1.5-3.4 3.4v178.2c0 32.3 26.3 58.6 58.6 58.6h582.6c32.3 0 58.6-26.3 58.6-58.6V346.9c0-1.9-1.5-3.4-3.4-3.4h-693z"
-                                fill="#333336" />
-                              <path
-                                d="M397.3 675H296.4c-0.8 0-1.5-0.7-1.5-1.5v-131c0-0.8 0.7-1.5 1.5-1.5h100.9c0.8 0 1.5 0.7 1.5 1.5v131c0 0.8-0.6 1.5-1.5 1.5z"
-                                fill="#D5D9CF" />
-                              <path
-                                d="M397.3 680.7H296.5c-4 0-7.3-3.3-7.3-7.3V542.6c0-4 3.3-7.3 7.3-7.3h100.8c4 0 7.3 3.3 7.3 7.3v130.8c0 4.1-3.3 7.3-7.3 7.3z m-96.6-11.5h92.4V546.8h-92.4v122.4z"
-                                fill="#333336" />
-                              <path
-                                d="M402.5 606.5H291.2c-5 0-9-4-9-9v-9.7c0-5 4-9 9-9h111.3c5 0 9 4 9 9v9.7c0 4.9-4 9-9 9z"
-                                fill="#D8A128" />
-                             
-                            
-                              <path
-                                d="M649.1 283.9c-2.3 0-4.6-0.2-6.8-0.7-8.8-1.9-16.4-7.6-20.9-15.5-18.5-32.9-57.5-88.1-111.4-88.1-55.7 0-93.8 54.6-111.5 87.1-4.4 8.1-12.1 13.9-21.1 15.9-8.9 2-18.3 0.1-25.7-5.2l-0.2-0.1c-12.8-9.2-16.9-26.7-9.6-40.7 10.3-19.6 28.2-47.9 55.4-71.6 33-28.8 70.9-43.4 112.7-43.4 38.7 0 75.1 14.5 108.4 43.2 27.4 23.6 46.7 51.8 58.1 71.3 8.3 14.2 4.5 32.2-8.8 41.8-5.5 3.9-12 6-18.6 6zM510 168.1c59.8 0 101.7 58.9 121.4 93.9 2.8 5 7.7 8.6 13.3 9.9 5.6 1.2 11.5 0 16.2-3.4 8.5-6.1 10.9-17.6 5.6-26.7-11-18.7-29.5-45.8-55.7-68.4-31.1-26.8-65-40.4-100.9-40.4-38.9 0-74.3 13.6-105.1 40.6-25.8 22.5-42.9 49.6-52.8 68.3-4.7 8.9-2 20.1 6.2 26l0.2 0.1c4.7 3.4 10.7 4.6 16.4 3.4 5.7-1.3 10.7-5 13.5-10.2 19.1-34.8 60-93.1 121.7-93.1z"
-                                fill="#333336" />
+                                        <path
+                                          d="M806.2 589.5H217.8c-34 0-61.5-27.5-61.5-61.5V346.5c0-4.8 3.9-8.7 8.7-8.7h693.8c4.8 0 8.7 3.9 8.7 8.7V528c0.2 34-27.4 61.5-61.3 61.5z"
+                                          fill="#FFD632" />
+                                        <path
+                                          d="M803.3 595.3H220.7c-38.7 0-70.1-31.5-70.1-70.1V346.9c0-8.2 6.7-14.9 14.9-14.9h693c8.2 0 14.9 6.7 14.9 14.9v178.2c0 38.7-31.4 70.2-70.1 70.2zM165.5 343.5c-1.9 0-3.4 1.5-3.4 3.4v178.2c0 32.3 26.3 58.6 58.6 58.6h582.6c32.3 0 58.6-26.3 58.6-58.6V346.9c0-1.9-1.5-3.4-3.4-3.4h-693z"
+                                          fill="#333336" />
+                                        <path
+                                          d="M397.3 675H296.4c-0.8 0-1.5-0.7-1.5-1.5v-131c0-0.8 0.7-1.5 1.5-1.5h100.9c0.8 0 1.5 0.7 1.5 1.5v131c0 0.8-0.6 1.5-1.5 1.5z"
+                                          fill="#D5D9CF" />
+                                        <path
+                                          d="M397.3 680.7H296.5c-4 0-7.3-3.3-7.3-7.3V542.6c0-4 3.3-7.3 7.3-7.3h100.8c4 0 7.3 3.3 7.3 7.3v130.8c0 4.1-3.3 7.3-7.3 7.3z m-96.6-11.5h92.4V546.8h-92.4v122.4z"
+                                          fill="#333336" />
+                                        <path
+                                          d="M402.5 606.5H291.2c-5 0-9-4-9-9v-9.7c0-5 4-9 9-9h111.3c5 0 9 4 9 9v9.7c0 4.9-4 9-9 9z"
+                                          fill="#D8A128" />
 
-                            </svg>
-                            Experience:
-                            </td>
-                            <td class="text-primary">17 years</td>
-                          </tr>
-                          <tr>
-                            <td class="text-primary">
-                              <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                              <path fill="#f7e702"
-                                d="M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1 -11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z" />
-                            </svg> Languages: 
-                            </td>
-                            <td class="text-primary">English, Hindi</td>
-                          
-                            <td class="text-primary">
-                              <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                              <path fill="#D5D9CF"
-                                d="M256 336h0c0-16.2 1.3-8.7-85.1-181.5-17.7-35.3-68.2-35.4-85.9 0C-2.1 328.8 0 320.3 0 336H0c0 44.2 57.3 80 128 80s128-35.8 128-80zM128 176l72 144H56l72-144zm512 160c0-16.2 1.3-8.7-85.1-181.5-17.7-35.3-68.2-35.4-85.9 0-87.1 174.3-85 165.8-85 181.5H384c0 44.2 57.3 80 128 80s128-35.8 128-80h0zM440 320l72-144 72 144H440zm88 128H352V153.3c23.5-10.3 41.2-31.5 46.4-57.3H528c8.8 0 16-7.2 16-16V48c0-8.8-7.2-16-16-16H383.6C369 12.7 346.1 0 320 0s-49 12.7-63.6 32H112c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h129.6c5.2 25.8 22.9 47 46.4 57.3V448H112c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h416c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16z" />
-                            </svg>
-                            Practice areas: 
-                            </td>
-                            <td class="text-primary">Kailash Hills, Delhi</td>
-                          </tr>
-                        </table>
+
+                                        <path
+                                          d="M649.1 283.9c-2.3 0-4.6-0.2-6.8-0.7-8.8-1.9-16.4-7.6-20.9-15.5-18.5-32.9-57.5-88.1-111.4-88.1-55.7 0-93.8 54.6-111.5 87.1-4.4 8.1-12.1 13.9-21.1 15.9-8.9 2-18.3 0.1-25.7-5.2l-0.2-0.1c-12.8-9.2-16.9-26.7-9.6-40.7 10.3-19.6 28.2-47.9 55.4-71.6 33-28.8 70.9-43.4 112.7-43.4 38.7 0 75.1 14.5 108.4 43.2 27.4 23.6 46.7 51.8 58.1 71.3 8.3 14.2 4.5 32.2-8.8 41.8-5.5 3.9-12 6-18.6 6zM510 168.1c59.8 0 101.7 58.9 121.4 93.9 2.8 5 7.7 8.6 13.3 9.9 5.6 1.2 11.5 0 16.2-3.4 8.5-6.1 10.9-17.6 5.6-26.7-11-18.7-29.5-45.8-55.7-68.4-31.1-26.8-65-40.4-100.9-40.4-38.9 0-74.3 13.6-105.1 40.6-25.8 22.5-42.9 49.6-52.8 68.3-4.7 8.9-2 20.1 6.2 26l0.2 0.1c4.7 3.4 10.7 4.6 16.4 3.4 5.7-1.3 10.7-5 13.5-10.2 19.1-34.8 60-93.1 121.7-93.1z"
+                                          fill="#333336" />
+
+                                      </svg>
+                                      Experience:
+                                    </div>
+                                    <div class=" col-6">
+                                      17 Years
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class=" col-md-12">
+                            <div class="row">
+                              <div class="mt-3 col-md-6">
+                                <div class="row">
+                                  <div class=" col-md-12">
+                                    <div class="row">
+                                      <div class=" col-6">
+                                        <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                          <path fill="#D5D9CF"
+                                            d="M256 336h0c0-16.2 1.3-8.7-85.1-181.5-17.7-35.3-68.2-35.4-85.9 0C-2.1 328.8 0 320.3 0 336H0c0 44.2 57.3 80 128 80s128-35.8 128-80zM128 176l72 144H56l72-144zm512 160c0-16.2 1.3-8.7-85.1-181.5-17.7-35.3-68.2-35.4-85.9 0-87.1 174.3-85 165.8-85 181.5H384c0 44.2 57.3 80 128 80s128-35.8 128-80h0zM440 320l72-144 72 144H440zm88 128H352V153.3c23.5-10.3 41.2-31.5 46.4-57.3H528c8.8 0 16-7.2 16-16V48c0-8.8-7.2-16-16-16H383.6C369 12.7 346.1 0 320 0s-49 12.7-63.6 32H112c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h129.6c5.2 25.8 22.9 47 46.4 57.3V448H112c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h416c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16z" />
+                                        </svg>
+                                        Practice areas:
+                                      </div>
+                                      <div class="col-6">
+
+                                        Kailash Hills, Delhi
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mt-3 col-md-6">
+                                <div class="row">
+                                  <div class=" col-md-12">
+                                    <div class="row">
+                                      <div class=" col-6">
+                                        <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                          <path fill="#f7e702"
+                                            d="M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1 -11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z" />
+                                        </svg> Languages:
+                                      </div>
+                                      <div class=" col-6">
+                                        English, Hindi
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -681,310 +603,354 @@ padding-top: 50px;
       </div>
     </div>
 
-    <section class="our-client section-padding best-selling pl-50">
-      <div class="container">
-        <div class="row">
-          <div class="offset-xl-1 col-xl-10">
-            <div class="nav-button f-left">
-              <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <a class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" href="#nav-one" role="tab"
-                    aria-controls="nav-one" aria-selected="true">Description</a>
-                  <a class="nav-link" id="nav-two-tab" data-bs-toggle="tab" href="#nav-two" role="tab"
-                    aria-controls="nav-two" aria-selected="false">Specialization</a>
-                  <a class="nav-link" id="nav-three-tab" data-bs-toggle="tab" href="#nav-three" role="tab"
-                    aria-controls="nav-three" aria-selected="false">Courts</a>
-                  <a class="nav-link" id="nav-four-tab" data-bs-toggle="tab" href="#nav-four" role="tab"
-                    aria-controls="nav-four" aria-selected="false">Review</a>
+
+    <section class="our-client container section-padding best-selling ">
+      <div class="row ">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="container">
+                <div class="row">
+                  <div class="offset-xl-1 col-xl-12">
+                    <div class="nav-button f-left">
+                      <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <a class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" href="#nav-one" role="tab"
+                            aria-controls="nav-one" aria-selected="true">Description</a>
+                          <a class="nav-link" id="nav-two-tab" data-bs-toggle="tab" href="#nav-two" role="tab"
+                            aria-controls="nav-two" aria-selected="false">Specialization</a>
+                          <a class="nav-link" id="nav-three-tab" data-bs-toggle="tab" href="#nav-three" role="tab"
+                            aria-controls="nav-three" aria-selected="false">Courts</a>
+                          <a class="nav-link" id="nav-four-tab" data-bs-toggle="tab" href="#nav-four" role="tab"
+                            aria-controls="nav-four" aria-selected="false">Review</a>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
                 </div>
-              </nav>
+              </div>
+              <div class="container">
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
+                    <div class="row">
+                      <div class="offset-xl-1 col-lg-12">
+                        <p class="text-justify">
+                          Advocate Evan Winter has since been practicing and handling cases independently with a result
+                          oriented
+                          approach, both professionally and ethically and has now acquired 17 years of professional
+                          experience
+                          in providing legal consultancy and advisory services. She has completed her BA.LLB(Hons) from
+                          Jamia
+                          Millia Islamia and has been practicing and handling cases independently and provides legal
+                          consultancy
+                          and advisory services.
+                        </p>
+                        <p class="text-justify">
+                          Advocate Evan Winter provides services in various field of civil as well as corporate laws,
+                          inter-alia, Suits, Writs, Petitions, Appeals, Revisions, Complaints relating to debt recovery,
+                          dishonor of cheques, rent control act, property disputes, matrimonial disputes, consumer
+                          complaints,
+                          complaints pertaining to Food Adulteration Act and service matter . In addition to this she is
+                          skilled
+                          in drafting and vetting various kinds of agreement such as Master Service Agreement, Service
+                          Agreement, Teaming Agreement, Consortium Agreement, various Tripartite Agreement, RFQs, Letter
+                          of
+                          Intent, MOU, Agreement with Celebrity, Endorsement Agreement, License Agreement, Sub-Licensing
+                          Agreement, Sub-Contracting, Third Party Agreement, Sale Deed, Corporate Lease Agreement,
+                          Development
+                          Agreement(Real estate), broadcasting agreement.
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab">
+                    <div class="row">
+                      <div class="offset-xl-1 col-lg-12">
+                        <p class="text-justify">
+                          File for Divorce, Reply / Send Legal Notice for Divorce, Contest / Appeal in Divorce Case,
+                          Dowry
+                          Demand / Domestic Violence / Abuse, Alimony / Maintenance Issue, Child Custody Issue,
+                          Extramarital
+                          Affair / Cheating, Muslim Marriage Issues, Marital Finance / Property Issues, Family / In-law
+                          Problems, Property Documentation / Verification, Family Property Dispute, Transfer of
+                          Ancestral
+                          Property, Illegal Possession, Illegal Construction, Landlord / Tenant Issues, Builder Delay /
+                          Fraud
+                        </p>
+                        <p class="text-justify">
+                          Transfer of Ownership / Name Change, Gifting of Property, Municipal Corporation Issues,
+                          Divorce /
+                          Matrimonial Issue, Succession of Property / Assets, Legal Heir Certificate, Property Dispute /
+                          Partition, Family Dispute, Wills / Trusts, Gift of Assets, Adoption / Surrogacy, Loaned Money
+                          Recovery, ATM / Credit Card Fraud, Bank issues, Non Payment of Dues, Reply / Send Legal Notice
+                          in
+                          Financial Case, Lawyer for Summons / Warrants, Wrongful Arrest, Physical / Sexual Abuse, FIR
+                          Filing /
+                          Quashing, Financial Fraud, Refund Related Issue, Medical Negligence, Arbitration & Mediation,
+                          Matrimonial / Divorce Related, Property Issue, Cheque Bounce, Builder Delay / Fraud, Family
+                          Dispute ,
+                          File Mutual Consent Divorce, Transfer Petition, Muslim Marriage Issues, RERA, NRI Property
+                          Issue,
+                          Transfer Petition, NRI Divorce
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-three" role="tabpanel" aria-labelledby="nav-three-tab">
+                    <div class="row">
+                      <div class="offset-xl-1 col-lg-12">
+                        <p>
+                          Central Administrative Tribunal (CAT) Delhi, Delhi High Court, District Court Dwarka, District
+                          Court
+                          Faridabad, District Court Gautambuddha Nagar, District Court Ghaziabad, District Court
+                          Gurgaon,
+                          District Court Karkardooma , District Court Patiala House, District Court Rohini, District
+                          Court
+                          Saket, District Court Tis Hazari, Supreme Court Of India
+                        </p>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-four" role="tabpanel" aria-labelledby="nav-four-tab">
+                    <div class="row">
+                      <div class="offset-xl-1 col-lg-12">
+                        <div class="container d-flex mt-4">
+                          <div class="profile p-3">
+                            <h1 class="c-head">R</h1>
+                          </div>
+                          <div class="content bg-light p-3 rounded">
+                            <div class="header d-flex text-">
+                              <div class="name c-name" >Rajan Sridhar</div>
+                              <div class="verified text-primary text-italic">- Verified Client</div>
+                              <div class="stars ml-20">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                              </div>
+                            </div>
+                            <div class="text text-justify">
+                              Thank you, Drishti and Ms Ray for the support and patience shown in closing the case. We
+                              managed
+                              to collect the order around 415 pm and it is as per the records submitted. Me and my
+                              brother want
+                              to offer our sincere efforts put in by your team to bring the case to a logical
+                              conclusion.
+                            </div>
+                            <div class="d-flex text-center mt-2 align-items-center">
+                              <span class="date-icon">
+                                <svg height="15" width="15" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                  <path fill="#63E6BE"
+                                    d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z" />
+                                </svg>
+                              </span>
+                              <small class="text-gray">Over 3 months ago</small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="container d-flex mt-4">
+                          <div class="profile p-3">
+                            <h1>R</h1>
+                          </div>
+                          <div class="content bg-light p-3 rounded">
+                            <div class="header d-flex text-">
+                              <div class="name">Rajan Sridhar</div>
+                              <div class="verified text-primary text-italic">- Verified Client</div>
+                              <div class="stars ml-20">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                              </div>
+                            </div>
+                            <div class="text text-justify">
+                              Thank you, Drishti and Ms Ray for the support and patience shown in closing the case. We
+                              managed
+                              to collect the order around 415 pm and it is as per the records submitted. Me and my
+                              brother want
+                              to offer our sincere efforts put in by your team to bring the case to a logical
+                              conclusion.
+                            </div>
+                            <div class="d-flex text-center mt-10 align-items-center">
+                              <span class="date-icon">
+                                <svg height="15" width="15" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                  <path fill="#63E6BE"
+                                    d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z" />
+                                </svg>
+                              </span>
+                              <small class="text-gray">Over 3 months ago</small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="container d-flex mt-4">
+                          <div class="profile p-3">
+                            <h1>R</h1>
+                          </div>
+                          <div class="content bg-light p-3 rounded">
+                            <div class="header d-flex text-">
+                              <div class="name">Rajan Sridhar</div>
+                              <div class="verified text-primary text-italic">- Verified Client</div>
+                              <div class="stars ml-20">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                              </div>
+                            </div>
+                            <div class="text text-justify">
+                              Thank you, Drishti and Ms Ray for the support and patience shown in closing the case. We
+                              managed
+                              to collect the order around 415 pm and it is as per the records submitted. Me and my
+                              brother want
+                              to offer our sincere efforts put in by your team to bring the case to a logical
+                              conclusion.
+                            </div>
+                            <div class="d-flex text-center mt-2 align-items-center">
+                              <span class="date-icon">
+                                <svg height="15" width="15" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                  <path fill="#63E6BE"
+                                    d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z" />
+                                </svg>
+                              </span>
+                              <small class="text-gray">Over 3 months ago</small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="container d-flex mt-4">
+                          <div class="profile p-3">
+                            <h1>R</h1>
+                          </div>
+                          <div class="content bg-light p-3 rounded">
+                            <div class="header d-flex text-">
+                              <div class="name">Rajan Sridhar</div>
+                              <div class="verified text-primary text-italic">- Verified Client</div>
+                              <div class="stars ml-20">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                              </div>
+                            </div>
+                            <div class="text text-justify">
+                              Thank you, Drishti and Ms Ray for the support and patience shown in closing the case. We
+                              managed
+                              to collect the order around 415 pm and it is as per the records submitted. Me and my
+                              brother want
+                              to offer our sincere efforts put in by your team to bring the case to a logical
+                              conclusion.
+                            </div>
+                            <div class="d-flex text-center mt-2 align-items-center">
+                              <span class="date-icon">
+                                <svg height="15" width="15" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                  <path fill="#63E6BE"
+                                    d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z" />
+                                </svg>
+                              </span>
+                              <small class="text-gray">Over 3 months ago</small>
+                            </div>
+                          </div>
+                        </div>
+            <div class="text-center mt-4"><a class="border-bottom-gray text-dark">Read More &rarr;</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 p-0">
+              <div class="form-section py-4 ">
+                <form action="#" id="formData" class="border p-4 shadow rounded w-100">
+                  <h4 class="text-semi-primary my-3 fw-bold text-center formHeader">Contact With Advocate</h4>
+                  <p class="text-semi-primary fw-bold">Name :</p>
+                  <input type="text" name="name" placeholder="Enter Your Name" class="form-control mb-2">
+                  <p class="text-semi-primary fw-bold">Contact Number :</p>
+                  <input type="number" name="contactNum" placeholder="Enter Your Contact Number" class="form-control mb-2">
+                  <p class="text-semi-primary fw-bold">Email :</p>
+                  <input type="email" name="email" placeholder="Enter Your Email Address" class="form-control mb-2">
+                  <p class="text-semi-primary fw-bold">City :</p>
+                  <select name="city" id="city" class="form-control mb-3">
+                    <option disabled selected>--Select City--</option>
+                    <option>City 1</option>
+                    <option>City 2</option>
+                    <option>City 3</option>
+                  </select>
+                  <input type="submit" value="Submit" class="btn btn-primary fw-bold">
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
-            <div class="row">
-              <div class="offset-xl-1 col-lg-9">
-                <p class="text-justify">
-                  Advocate Evan Winter has since been practicing and handling cases independently with a result oriented
-                  approach, both professionally and ethically and has now acquired 17 years of professional experience
-                  in providing legal consultancy and advisory services. She has completed her BA.LLB(Hons) from Jamia
-                  Millia Islamia and has been practicing and handling cases independently and provides legal consultancy
-                  and advisory services.
-                </p>
-                <p class="text-justify">
-                  Advocate Evan Winter provides services in various field of civil as well as corporate laws,
-                  inter-alia, Suits, Writs, Petitions, Appeals, Revisions, Complaints relating to debt recovery,
-                  dishonor of cheques, rent control act, property disputes, matrimonial disputes, consumer complaints,
-                  complaints pertaining to Food Adulteration Act and service matter . In addition to this she is skilled
-                  in drafting and vetting various kinds of agreement such as Master Service Agreement, Service
-                  Agreement, Teaming Agreement, Consortium Agreement, various Tripartite Agreement, RFQs, Letter of
-                  Intent, MOU, Agreement with Celebrity, Endorsement Agreement, License Agreement, Sub-Licensing
-                  Agreement, Sub-Contracting, Third Party Agreement, Sale Deed, Corporate Lease Agreement, Development
-                  Agreement(Real estate), broadcasting agreement.
 
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab">
-            <div class="row">
-              <div class="offset-xl-1 col-lg-9">
-                <p class="text-justify">
-                  File for Divorce, Reply / Send Legal Notice for Divorce, Contest / Appeal in Divorce Case, Dowry
-                  Demand / Domestic Violence / Abuse, Alimony / Maintenance Issue, Child Custody Issue, Extramarital
-                  Affair / Cheating, Muslim Marriage Issues, Marital Finance / Property Issues, Family / In-law
-                  Problems, Property Documentation / Verification, Family Property Dispute, Transfer of Ancestral
-                  Property, Illegal Possession, Illegal Construction, Landlord / Tenant Issues, Builder Delay / Fraud
-                </p>
-                <p class="text-justify">
-                  Transfer of Ownership / Name Change, Gifting of Property, Municipal Corporation Issues, Divorce /
-                  Matrimonial Issue, Succession of Property / Assets, Legal Heir Certificate, Property Dispute /
-                  Partition, Family Dispute, Wills / Trusts, Gift of Assets, Adoption / Surrogacy, Loaned Money
-                  Recovery, ATM / Credit Card Fraud, Bank issues, Non Payment of Dues, Reply / Send Legal Notice in
-                  Financial Case, Lawyer for Summons / Warrants, Wrongful Arrest, Physical / Sexual Abuse, FIR Filing /
-                  Quashing, Financial Fraud, Refund Related Issue, Medical Negligence, Arbitration & Mediation,
-                  Matrimonial / Divorce Related, Property Issue, Cheque Bounce, Builder Delay / Fraud, Family Dispute ,
-                  File Mutual Consent Divorce, Transfer Petition, Muslim Marriage Issues, RERA, NRI Property Issue,
-                  Transfer Petition, NRI Divorce
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="nav-three" role="tabpanel" aria-labelledby="nav-three-tab">
-            <div class="row">
-              <div class="offset-xl-1 col-lg-9">
-                <p>
-                  Central Administrative Tribunal (CAT) Delhi, Delhi High Court, District Court Dwarka, District Court
-                  Faridabad, District Court Gautambuddha Nagar, District Court Ghaziabad, District Court Gurgaon,
-                  District Court Karkardooma , District Court Patiala House, District Court Rohini, District Court
-                  Saket, District Court Tis Hazari, Supreme Court Of India
-                </p>
 
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="nav-four" role="tabpanel" aria-labelledby="nav-four-tab">
-            <div class="row">
-              <div class="offset-xl-1 col-lg-9">
-                <div class="container mt-25">
-                  <div class="profile float-left">
-                    <h1>R</h1>
-                  </div>
-                  <div class="content bg-silver p-3 radius">
-                    <div class="header d-flex text-center mb-10">
-                      <div class="name">Rajan Sridhar</div>
-                      <div class="verified text-primary text-italic">- Verified Client</div>
-                      <div class="stars ml-20">
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                      </div>
-                    </div>
-                    <div class="text text-justify">
-                      Thank you, Drishti and Ms Ray for the support and patience shown in closing the case. We managed
-                      to collect the order around 415 pm and it is as per the records submitted. Me and my brother want
-                      to offer our sincere efforts put in by your team to bring the case to a logical conclusion.
-                    </div>
-                    <div class="d-flex text-center mt-10 align-items-center">
-                      <span class="date-icon">
-                        <svg height="15" width="15" xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                          <path fill="#63E6BE"
-                            d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z" />
-                        </svg>
-                      </span>
-                      <small class="text-gray">Over 3 months ago</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="container mt-25">
-                  <div class="profile float-left">
-                    <h1>R</h1>
-                  </div>
-                  <div class="content bg-silver p-3 radius">
-                    <div class="header d-flex text-center mb-10">
-                      <div class="name">Rajan Sridhar</div>
-                      <div class="verified text-primary text-italic">- Verified Client</div>
-                      <div class="stars ml-20">
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                      </div>
-                    </div>
-                    <div class="text text-justify">
-                      Thank you, Drishti and Ms Ray for the support and patience shown in closing the case. We managed
-                      to collect the order around 415 pm and it is as per the records submitted. Me and my brother want
-                      to offer our sincere efforts put in by your team to bring the case to a logical conclusion.
-                    </div>
-                    <div class="d-flex text-center mt-10 align-items-center">
-                      <span class="date-icon">
-                        <svg height="15" width="15" xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                          <path fill="#63E6BE"
-                            d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z" />
-                        </svg>
-                      </span>
-                      <small class="text-gray">Over 3 months ago</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="container mt-25">
-                  <div class="profile float-left">
-                    <h1>R</h1>
-                  </div>
-                  <div class="content bg-silver p-3 radius">
-                    <div class="header d-flex text-center mb-10">
-                      <div class="name">Rajan Sridhar</div>
-                      <div class="verified text-primary text-italic">- Verified Client</div>
-                      <div class="stars ml-20">
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                      </div>
-                    </div>
-                    <div class="text text-justify">
-                      Thank you, Drishti and Ms Ray for the support and patience shown in closing the case. We managed
-                      to collect the order around 415 pm and it is as per the records submitted. Me and my brother want
-                      to offer our sincere efforts put in by your team to bring the case to a logical conclusion.
-                    </div>
-                    <div class="d-flex text-center mt-10 align-items-center">
-                      <span class="date-icon">
-                        <svg height="15" width="15" xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                          <path fill="#63E6BE"
-                            d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z" />
-                        </svg>
-                      </span>
-                      <small class="text-gray">Over 3 months ago</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="container mt-25">
-                  <div class="profile float-left">
-                    <h1>R</h1>
-                  </div>
-                  <div class="content bg-silver p-3 radius">
-                    <div class="header d-flex text-center mb-10">
-                      <div class="name">Rajan Sridhar</div>
-                      <div class="verified text-primary text-italic">- Verified Client</div>
-                      <div class="stars ml-20">
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                      </div>
-                    </div>
-                    <div class="text text-justify">
-                      Thank you, Drishti and Ms Ray for the support and patience shown in closing the case. We managed
-                      to collect the order around 415 pm and it is as per the records submitted. Me and my brother want
-                      to offer our sincere efforts put in by your team to bring the case to a logical conclusion.
-                    </div>
-                    <div class="d-flex text-center mt-10 align-items-center">
-                      <span class="date-icon">
-                        <svg height="15" width="15" xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                          <path fill="#63E6BE"
-                            d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z" />
-                        </svg>
-                      </span>
-                      <small class="text-gray">Over 3 months ago</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="text-center mt-25">
-                  <a class="border-bottom-gray text-dark">Read More &rarr;</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
-    <section class="form-section w-100 bg-primary p-3 shadow">
-     
-  <form action="#" class="p-3 pt-50">
-    <h2 class="border-bottom-gray text-light p-1">Fill the form to get contact number of Advocate Sudershani Ray</h2>
-    <div class="row">
-      <div class="col-md-12 my-5">
-        <div class="row justify-content-between">
-    <div class="col-md-4">
-      <span class="text-light">Name</span>
-    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
-
-    </div>
-    <div class="col-md-4 ">
-      <span class="text-light">Contact Number</span>
-      <input type="number" class="form-control" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
-      <small class="text-success">(Lawyer contact number will be sent to this number)</small>
-    </div>
-    <div class="col-md-4">
-      <span class="text-light">Email</span>
-      <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
-    </div>
-  </div>
-  </div>
-   <div class="col-md-12">
-    <select id="city" class="form-control" name="city">
-      <option disabled selected>select city in which you need lawyer</option>
-      <option value="city1">City 1</option>
-      <option value="city2">City 2</option>
-      <option value="city3">City 3</option>
-      </select>
-    </div>
-    </div>
-    <input type="submit" value="Submit" class="btn radius fw-bold bg-light text-primary">
-  </form>
-    </section>
-
-    <section class="video-section p-3 my-5">
+    <section class="video-section my-5 container">
       <h2 class="mb-50 border-bottom-gray fw-bold">Legal Advice Videos</h2>
-<div class="row justify-content-between flex-wrap">
-<div class="col-md-4">
-<div class="outer-v border p-3 shadow rounded">
-  <div class="video-section">
-    <iframe class="w-100 mb-10" height="230" src="https://www.youtube-nocookie.com/embed/RebkkV23OvM?si=SDgRk2glGHyuqZct" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-  <div class="video-desc">3 Year LLB Course</div>
-  <small class="text-gray text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, ipsam dicta? Dolore nam, dolores aliquid aut impedit recusandae sit, nostrum esse architecto excepturi nesciunt eaque mollitia quaerat doloribus obcaecati.
-  </small><br><br>
-  <a class="border-bottom-gray text-dark">Read More &rarr;</a>
-</div>
-</div>
-<div class="col-md-4">
-<div class="outer-v border p-3 shadow rounded">
-  <div class="video-section">
-    <iframe height="230" class="w-100 mb-10" src="https://www.youtube-nocookie.com/embed/ebf66wNVdto?si=jIeKCbYeoz5TiQat" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-  <div class="video-desc">3 Year LLB Course</div>
-  <small class="text-gray text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, ipsam dicta? Dolore nam, dolores aliquid aut impedit recusandae sit, nostrum esse architecto excepturi nesciunt eaque mollitia quaerat doloribus obcaecati.
-  </small><br><br>
-  <a class="border-bottom-gray text-dark">Read More &rarr;</a>
-</div>
-</div>
-<div class="col-md-4">
-<div class="outer-v border p-3 shadow rounded">
-  <div class="video-section">
-    <iframe height="230" class="w-100 mb-10" src="https://www.youtube-nocookie.com/embed/Z0sNnZhSEJA?si=zksZfV5gi3Oi5zsF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-  <div class="video-desc">3 Year LLB Course</div>
-  <small class="text-gray text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, ipsam dicta? Dolore nam, dolores aliquid aut impedit recusandae sit, nostrum esse architecto excepturi nesciunt eaque mollitia quaerat doloribus obcaecati.
-  </small><br><br>
-  <a class="border-bottom-gray text-dark">Read More &rarr;</a>
-</div>
-</div>
+      <div class="row justify-content-between flex-wrap">
+        <div class="col-sm-4 mt-4">
+          <div class="outer-v border p-3 shadow rounded">
+            <div class="video-section">
+              <iframe class="w-100 mb-10" height="230"
+                src="https://www.youtube-nocookie.com/embed/RebkkV23OvM?si=SDgRk2glGHyuqZct"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-desc">3 Year LLB Course</div>
+            <small class="text-gray text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+              ipsam dicta? Dolore nam, dolores aliquid aut impedit recusandae sit, nostrum esse architecto excepturi
+              nesciunt eaque mollitia quaerat doloribus obcaecati.
+            </small><br><br>
+            <a class="border-bottom-gray text-dark">Read More &rarr;</a>
+          </div>
+        </div>
+        <div class="col-sm-4 mt-4">
+          <div class="outer-v border p-3 shadow rounded">
+            <div class="video-section">
+              <iframe height="230" class="w-100 mb-10"
+                src="https://www.youtube-nocookie.com/embed/ebf66wNVdto?si=jIeKCbYeoz5TiQat"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-desc">3 Year LLB Course</div>
+            <small class="text-gray text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+              ipsam dicta? Dolore nam, dolores aliquid aut impedit recusandae sit, nostrum esse architecto excepturi
+              nesciunt eaque mollitia quaerat doloribus obcaecati.
+            </small><br><br>
+            <a class="border-bottom-gray text-dark">Read More &rarr;</a>
+          </div>
+        </div>
+        <div class="col-sm-4 mt-4">
+          <div class="outer-v border p-3 shadow rounded">
+            <div class="video-section">
+              <iframe height="230" class="w-100 mb-10"
+                src="https://www.youtube-nocookie.com/embed/Z0sNnZhSEJA?si=zksZfV5gi3Oi5zsF"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-desc">3 Year LLB Course</div>
+            <small class="text-gray text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+              ipsam dicta? Dolore nam, dolores aliquid aut impedit recusandae sit, nostrum esse architecto excepturi
+              nesciunt eaque mollitia quaerat doloribus obcaecati.
+            </small><br><br>
+            <a class="border-bottom-gray text-dark">Read More &rarr;</a>
+          </div>
+        </div>
 
-</div>
+      </div>
     </section>
   </main>
   <footer>
@@ -1147,6 +1113,8 @@ padding-top: 50px;
   <script src="assets/js/main.js"></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -1160,6 +1128,7 @@ padding-top: 50px;
     integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
     data-cf-beacon='{"rayId":"8bdce1fa5c5a5951","version":"2024.8.0","serverTiming":{"name":{"cfL4":true}},"token":"cd0b4b3a733644fc843ef0b185f98241","b":1}'
     crossorigin="anonymous"></script>
+
 </body>
 
 <!-- Mirrored from preview.colorlib.com/theme/capitalshop/pro-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:17:48 GMT -->
