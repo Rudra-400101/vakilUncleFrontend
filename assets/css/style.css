@@ -3125,6 +3125,23 @@ hr {
     }
 }
 
+@media only screen and (max-width: 552px){
+    .category-listing {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media only screen and (min-width:552px) {
+    .filterContainer{
+        display: none;
+        visibility: hidden;
+    }
+    .category-listing {
+        visibility: visible;
+        display: block;
+    }
+}
 .category-listing .single-listing .select-job-items2 .nice-select {
     width: 100%;
     height: 45px;
