@@ -15,12 +15,28 @@
       var scroll = $(window).scrollTop();
       if (scroll < 100) {
         $(".header-sticky").removeClass("sticky-bar");
+        $(".filterSticky").removeClass("filter-sticky");
         $('#back-top').fadeOut(500);
       } else {
         $(".header-sticky").addClass("sticky-bar");
+        $(".filterSticky").addClass("filter-sticky");
         $('#back-top').fadeIn(500);
       }
+
+      var elementToWatch = $(".footer-wrapper").offset().top;
+      var scrollPos = $(window).scrollTop();
+      if (scrollPos + $(window).height() > elementToWatch) {
+        debugger;
+          // Remove class from the target element
+          $(".filterSticky").removeClass("filter-sticky");
+      }
+      
+      // else{
+      //   $(".filterSticky").removeClass("filter-sticky");
+      // }
+      
     });
+//filter scroll
 
   // Scroll Up
     $('#back-top a').on("click", function () {
