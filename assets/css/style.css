@@ -3140,7 +3140,8 @@ hr {
 
 .category-listing {
     border: 1px solid #edeff2;
-    padding: 30px 19px 30px 30px
+    padding: 30px 19px 30px 30px;
+    height: 90vh;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3156,18 +3157,37 @@ hr {
 }
 
 @media only screen and (max-width: 552px){
-    .category-listing {
-        display: none;
-    }
+    
     .imageProfileSection{
-        height: 150px;
+        height: auto;
         width: 100%;
     }
     .smallBannerImage{
-        height: 150px;
+        height: 150px !important;
+    }
+    .filterContainer{
+        display: block;
+        visibility: visible;
+    }
+    .filter-sticky{
+        position: static;
+        border: 1px solid #edeff2;
+        padding: 30px 19px 30px 30px;
+        height: 90vh;
+        width: 100%;
+        overflow: hidden;
+        box-shadow: none;
+    }
+    .card-body{
+        font-size: 1%;
     }
 }
-
+.smallBannerImage{
+    height: 250px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+}
 #ViewByLocation{
     margin-top: 9px;
 }
@@ -3242,14 +3262,9 @@ hr {
     #filterContainerBox{
         display: block;
     }
+    
 }
 
-@media screen and(max-width: 552px) {
-    .filterContainer{
-        display: block;
-        visibility: visible;
-    }
-}
 .category-listing .single-listing .select-job-items2 .nice-select {
     width: 100%;
     height: 45px;
@@ -4061,6 +4076,15 @@ hr {
 .order_box .list li a span {
     float: right
 }
+.order_box ul li a{
+    color: black;
+    font-size: 12px;
+    transition: 0.5 all ease;
+}
+.order_box ul li a:hover{
+    word-spacing: 2px;
+    transition: 0.5 all ease;
+}
 
 .order_box .list li a .middle {
     float: none;
@@ -4690,7 +4714,6 @@ hr {
 .home-blog {
     background: #F6F6F6;
     padding-top: 80px;
-    padding-bottom: 29px
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {

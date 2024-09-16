@@ -71,7 +71,7 @@
     //filter Toggle 
     $("#filter_1").on("click", function(){
       $("#filterContainerBox").slideToggle();
-    
+      
     })
 
 
