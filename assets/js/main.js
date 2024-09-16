@@ -26,7 +26,6 @@
       var elementToWatch = $(".footer-wrapper").offset().top;
       var scrollPos = $(window).scrollTop();
       if (scrollPos + $(window).height() > elementToWatch) {
-        debugger;
           // Remove class from the target element
           $(".filterSticky").removeClass("filter-sticky");
       }
