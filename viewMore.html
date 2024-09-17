@@ -28,22 +28,11 @@
   </script>
 
   <style>
-    body {
-      font-family: sans-serif;
-    }
-
-
-    .border-bottom {
-      border-bottom: 2px solid white;
-    }
-
+   
     .border-box {
       box-sizing: border-box;
     }
 
-    .overflow-hidden {
-      overflow: hidden;
-    }
 
     .profile {
       background-color: #f0f0f0;
@@ -98,26 +87,6 @@
       margin-right: 5px;
     }
 
-    .text-italic {
-      font-style: italic !important;
-    }
-
-    .bg-none {
-      background: none;
-    }
-
-    .border-bottom-gray {
-      border-bottom: 2px solid #cccccc;
-    }
-
-    .rounded-none {
-      border-radius: 0 !important;
-    }
-
-    .bg-white {
-      background-color: white;
-    }
-
     .text-semi-primary {
       color: #85bde6 !important;
     }
@@ -128,41 +97,13 @@
    .formHeader{
     text-shadow: 1px 1px 2px #2B3B4E;
    }
-   #formData{
-    background-color: rgba(7, 134, 253, 0.024);
-  -webkit-backdrop-filter: blur(50px);
-  backdrop-filter: blur(50px);
-   }
-   #formData{
-    min-width: 250px;
-   }
    .our-client{
     padding-top: 8vw !important;
    }
    .ad-b-outer{
     width: 90%;
    }
-@media screen and (min-width:575px) {
-  .single-services{
-    flex-wrap: nowrap !important;
-  }
-  .features-caption{
-    margin-left: 20px !important;
 
-  }
-  .advocate-detail{
-    margin-bottom: 0 !important;
-  }
-  .advocate-contact{
-    margin-bottom: 0 !important;
-  }
- 
-}
-@media screen and (max-width:575px) {
-  .advocate-image{
-    width: 200px !important;
-  }
-}
 
 @media screen and (max-width:998px)
 {
@@ -189,9 +130,52 @@ margin-bottom: 8px !important;
   .ad-b-outer{
     width: 100%;
    }
+   .video-card{
+  min-width: 200px !important; 
+  }
 }
-.video-card{
-    min-width: 220px;
+
+@media screen and (min-width:575px) {
+  .single-services{
+    flex-wrap: nowrap !important;
+  }
+  .features-caption{
+    margin-left: 20px !important;
+
+  }
+  .advocate-detail{
+    margin-bottom: 0 !important;
+  }
+  .advocate-contact{
+    margin-bottom: 0 !important;
+  }
+ 
+}
+@media screen and (max-width:575px) {
+  .advocate-image{
+    width: 200px !important;
+  }
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    box-sizing: border-box;
+}
+.content-header{
+  background: url("assets/img/viewMore/header-bg1.jpg");
+  height: 35vh;
+  background-position:bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#header-detail{
+  text-shadow: 2px 1px rgb(244, 215, 215);
+}
+.readmore-btn,.readless-btn{
+  cursor: pointer;
 }
   </style>
 </head>
@@ -379,8 +363,11 @@ margin-bottom: 8px !important;
     </div>
 </header>
   <main>
+    <div class="content-header shadow w-100 d-flex justify-content-center align-items-center">
+      <h1 id="header-detail" class="text-light d-flex align-items-center gap-2">Heading</h1>
+          </div>
    <section class="container my-5">
-    <div class="row">
+    <div class="row ">
         <div class="col-sm-12 comments">
             <div class="row flex-wrap">
                 <div class="col-sm-6 col-md-6">
@@ -538,9 +525,9 @@ margin-bottom: 8px !important;
             </div>
         </div>
         <div class="col-sm-12 videos">
-            <div class="row justify-content-center">
-                <div class="col-sm-3 px-2 mt-4 video-card">
-                    <div class="outer-v border p-3 shadow rounded">
+            <div class="video-container">
+                <div class=" mt-4 video-card">
+                    <div class="outer-v border p-2 shadow rounded">
                       <div class="video-section">
                         <iframe height="230" class="w-100 mb-10 rounded-top"
                           src="https://www.youtube-nocookie.com/embed/ebf66wNVdto?si=jIeKCbYeoz5TiQat"
@@ -549,14 +536,16 @@ margin-bottom: 8px !important;
                           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                       </div>
                       <div class="video-desc fw-bold">3 Year LLB Course</div>
-                      <small class="text-gray text-justify video-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+                      <div class="outer-video-desc">
+                      <small class="text-gray text-justify video-description"> amet consectetur, adipisicing elit. Debitis,
                         ipsam dicta? Dolore nam, dolores aliquid aut impedit recusandae sit, nostrum esse architecto excepturi
                         nesciunt eaque mollitia quaerat doloribus obcaecati.
-                      </small><br><br>
+                      </small>
+                    </div><br><br>
                     </div>
-                  </div>
-                <div class="col-sm-3 px-2 mt-4 video-card">
-                    <div class="outer-v border p-3 shadow rounded">
+                  </div>     
+                <div class=" mt-4 video-card">
+                    <div class="outer-v border p-2 shadow rounded">
                       <div class="video-section">
                         <iframe height="230" class="w-100 mb-10 rounded-top"
                           src="https://www.youtube-nocookie.com/embed/ebf66wNVdto?si=jIeKCbYeoz5TiQat"
@@ -565,14 +554,16 @@ margin-bottom: 8px !important;
                           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                       </div>
                       <div class="video-desc fw-bold">3 Year LLB Course</div>
-                      <small class="text-gray text-justify video-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+                      <div class="outer-video-desc">
+                      <small class="text-gray text-justify video-description"> sit amet consectetur, adipisicing elit. Debitis,
                         ipsam dicta? Dolore nam, dolores aliquid aut impedit recusandae sit, nostrum esse architecto excepturi
                         nesciunt eaque mollitia quaerat doloribus obcaecati.
-                      </small><br><br>
+                      </small>
+                    </div><br><br>
                     </div>
-                  </div>
-                <div class="col-sm-3 px-2 mt-4 video-card">
-                    <div class="outer-v border p-3 shadow rounded">
+                  </div>     
+                <div class=" mt-4 video-card">
+                    <div class="outer-v border p-2 shadow rounded">
                       <div class="video-section">
                         <iframe height="230" class="w-100 mb-10 rounded-top"
                           src="https://www.youtube-nocookie.com/embed/ebf66wNVdto?si=jIeKCbYeoz5TiQat"
@@ -581,14 +572,16 @@ margin-bottom: 8px !important;
                           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                       </div>
                       <div class="video-desc fw-bold">3 Year LLB Course</div>
-                      <small class="text-gray text-justify video-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+                      <div class="outer-video-desc">
+                      <small class="text-gray text-justify video-description">dolor sit amet consectetur, adipisicing elit. Debitis,
                         ipsam dicta? Dolore nam, dolores aliquid aut impedit recusandae sit, nostrum esse architecto excepturi
                         nesciunt eaque mollitia quaerat doloribus obcaecati.
-                      </small><br><br>
+                      </small>
+                    </div><br><br>
                     </div>
-                  </div>
-                <div class="col-sm-3 px-2 mt-4 video-card">
-                    <div class="outer-v border p-3 shadow rounded">
+                  </div>     
+                <div class=" mt-4 video-card">
+                    <div class="outer-v border p-2 shadow rounded">
                       <div class="video-section">
                         <iframe height="230" class="w-100 mb-10 rounded-top"
                           src="https://www.youtube-nocookie.com/embed/ebf66wNVdto?si=jIeKCbYeoz5TiQat"
@@ -597,14 +590,16 @@ margin-bottom: 8px !important;
                           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                       </div>
                       <div class="video-desc fw-bold">3 Year LLB Course</div>
-                      <small class="text-gray text-justify video-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+                      <div class="outer-video-desc">
+                      <small class="text-gray text-justify video-description">ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
                         ipsam dicta? Dolore nam, dolores aliquid aut impedit recusandae sit, nostrum esse architecto excepturi
                         nesciunt eaque mollitia quaerat doloribus obcaecati.
-                      </small><br><br>
+                      </small>
+                    </div><br><br>
                     </div>
-                  </div>
-                <div class="col-sm-3 px-2 mt-4 video-card">
-                    <div class="outer-v border p-3 shadow rounded">
+                  </div>     
+                <div class=" mt-4 video-card">
+                    <div class="outer-v border p-2 shadow rounded">
                       <div class="video-section">
                         <iframe height="230" class="w-100 mb-10 rounded-top"
                           src="https://www.youtube-nocookie.com/embed/ebf66wNVdto?si=jIeKCbYeoz5TiQat"
@@ -613,77 +608,82 @@ margin-bottom: 8px !important;
                           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                       </div>
                       <div class="video-desc fw-bold">3 Year LLB Course</div>
+                      <div class="outer-video-desc">
                       <small class="text-gray text-justify video-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
                         ipsam dicta? Dolore nam, dolores aliquid aut impedit recusandae sit, nostrum esse architecto excepturi
                         nesciunt eaque mollitia quaerat doloribus obcaecati.
-                      </small><br><br>
+                      </small>
+                    </div><br><br>
                     </div>
-                  </div>
-                <div class="col-sm-3 px-2 mt-4 video-card">
-                    <div class="outer-v border p-3 shadow rounded">
-                      <div class="video-section">
-                        <iframe height="230" class="w-100 mb-10 rounded-top"
-                          src="https://www.youtube-nocookie.com/embed/ebf66wNVdto?si=jIeKCbYeoz5TiQat"
-                          title="YouTube video player" frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                      </div>
-                      <div class="video-desc fw-bold">3 Year LLB Course</div>
-                      <small class="text-gray text-justify video-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
-                        ipsam dicta? Dolore nam, dolores aliquid aut impedit recusandae sit, nostrum esse architecto excepturi
-                        nesciunt eaque mollitia quaerat doloribus obcaecati.
-                      </small><br><br>
-                    </div>
-                  </div>
-                <div class="col-sm-3 px-2 mt-4 video-card">
-                    <div class="outer-v border p-3 shadow rounded">
-                      <div class="video-section">
-                        <iframe height="230" class="w-100 mb-10 rounded-top"
-                          src="https://www.youtube-nocookie.com/embed/ebf66wNVdto?si=jIeKCbYeoz5TiQat"
-                          title="YouTube video player" frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                      </div>
-                      <div class="video-desc fw-bold">3 Year LLB Course</div>
-                      <small class="text-gray text-justify video-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
-                        ipsam dicta? Dolore nam, dolores aliquid aut impedit recusandae sit, nostrum esse architecto excepturi
-                        nesciunt eaque mollitia quaerat doloribus obcaecati.
-                      </small><br><br>
-                    </div>
-                  </div>
-                <div class="col-sm-3 px-2 mt-4 video-card">
-                    <div class="outer-v border p-3 shadow rounded">
-                      <div class="video-section">
-                        <iframe height="230" class="w-100 mb-10 rounded-top"
-                          src="https://www.youtube-nocookie.com/embed/ebf66wNVdto?si=jIeKCbYeoz5TiQat"
-                          title="YouTube video player" frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                      </div>
-                      <div class="video-desc fw-bold">3 Year LLB Course</div>
-                      <small class="text-gray text-justify video-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
-                        ipsam dicta? Dolore nam, dolores aliquid aut impedit recusandae sit, nostrum esse architecto excepturi
-                        nesciunt eaque mollitia quaerat doloribus obcaecati.
-                      </small><br><br>
-                    </div>
-                  </div>
-                <div class="col-sm-3 px-2 mt-4 video-card">
-                    <div class="outer-v border p-3 shadow rounded">
-                      <div class="video-section">
-                        <iframe height="230" class="w-100 mb-10 rounded-top"
-                          src="https://www.youtube-nocookie.com/embed/ebf66wNVdto?si=jIeKCbYeoz5TiQat"
-                          title="YouTube video player" frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                      </div>
-                      <div class="video-desc fw-bold">3 Year LLB Course</div>
-                      <small class="text-gray text-justify video-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
-                        ipsam dicta? Dolore nam, dolores aliquid aut impedit recusandae sit, nostrum esse architecto excepturi
-                        nesciunt eaque mollitia quaerat doloribus obcaecati.
-                      </small><br><br>
-                    </div>
-                  </div>
+                  </div>     
                
+            </div>             
+        </div>
+        <div class="col-sm-12 gallery">
+          <div class="section-top-border py-0">
+            <h3></h3>
+            <div class="row gallery-item">
+            <div class="col-md-4">
+            <a href="assets/img/elements/g1.jpg" class="img-pop-up">
+            <div class="single-gallery-image mt-0 mb-3" style="background: url(assets/img/elements/g1.jpg);"></div>
+            </a>
+            </div>
+            <div class="col-md-4">
+            <a href="assets/img/elements/g2.jpg" class="img-pop-up">
+            <div class="single-gallery-image mt-0 mb-3" style="background: url(assets/img/elements/g2.jpg);"></div>
+            </a>
+            </div>
+            <div class="col-md-4">
+            <a href="assets/img/elements/g3.jpg" class="img-pop-up">
+            <div class="single-gallery-image mt-0 mb-3" style="background: url(assets/img/elements/g3.jpg);"></div>
+            </a>
+            </div>
+            <div class="col-md-6">
+            <a href="assets/img/elements/g4.jpg" class="img-pop-up">
+            <div class="single-gallery-image mt-0 mb-3" style="background: url(assets/img/elements/g4.jpg);"></div>
+            </a>
+            </div>
+            <div class="col-md-6">
+            <a href="assets/img/elements/g5.jpg" class="img-pop-up">
+            <div class="single-gallery-image mt-0 mb-3" style="background: url(assets/img/elements/g5.jpg);"></div>
+            </a>
+            </div>
+            <div class="col-md-4">
+            <a href="assets/img/elements/g6.jpg" class="img-pop-up">
+            <div class="single-gallery-image mt-0 mb-3" style="background: url(assets/img/elements/g6.jpg);"></div>
+            </a>
+            </div>
+            <div class="col-md-4">
+            <a href="assets/img/elements/g7.jpg" class="img-pop-up">
+            <div class="single-gallery-image mt-0 mb-3" style="background: url(assets/img/elements/g7.jpg);"></div>
+            </a>
+            </div>
+            <div class="col-md-4">
+            <a href="assets/img/elements/g8.jpg" class="img-pop-up">
+            <div class="single-gallery-image mt-0 mb-3" style="background: url(assets/img/elements/g8.jpg);"></div>
+            </a>
+            </div>
+            <div class="col-md-4">
+            <a href="assets/img/elements/g8.jpg" class="img-pop-up">
+            <div class="single-gallery-image mt-0 mb-3" style="background: url(assets/img/elements/g8.jpg);"></div>
+            </a>
+            </div>
+            <div class="col-md-4">
+              <a href="assets/img/elements/g6.jpg" class="img-pop-up">
+              <div class="single-gallery-image mt-0 mb-3" style="background: url(assets/img/elements/g6.jpg);"></div>
+              </a>
+              </div>
+            <div class="col-md-4">
+            <a href="assets/img/elements/g8.jpg" class="img-pop-up">
+            <div class="single-gallery-image mt-0 mb-3" style="background: url(assets/img/elements/g8.jpg);"></div>
+            </a>
+            </div>
+            </div>
+            <div class="pagination float-end" id="pagination"> 
+              <button class="p-2 border btn btn-success left-btn">&larr;</button> 
+              <button class="py-2 px-3 border-0 fw-semi-bold rounded bg-secondary mx-2"><span class="cPageCount">3</span>/<span class="totalPageCount">5</span></button>          
+              <button class="p-2 border btn fw-bold btn-success right-btn">&rarr;</button>           
+          </div>
             </div>
         </div>
     </div>
@@ -844,14 +844,17 @@ margin-bottom: 8px !important;
   <script src="assets/js/jquery.validate.min.js"></script>
   <script src="assets/js/mail-script.js"></script>
   <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  
+<script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);
@@ -859,14 +862,20 @@ margin-bottom: 8px !important;
     gtag("js", new Date());
 
     gtag("config", "UA-23581568-13");
-  </script>
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
-    integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
-    data-cf-beacon='{"rayId":"8bdce1fa5c5a5951","version":"2024.8.0","serverTiming":{"name":{"cfL4":true}},"token":"cd0b4b3a733644fc843ef0b185f98241","b":1}'
-    crossorigin="anonymous"></script>
-    <script>
+</script>
+  
+<script>
+  let descArray=[];
+  let resetdesc={};
         $(".video-description").each(function(e,d){
-          d.innerText=d.innerText.slice(0,100)+"..."
+          descArray.push(d.innerText)
+          d.innerHTML=d.innerText.slice(0,100)+"...&nbsp;" 
+          let readmore=document.createElement("small")
+          readmore.classList.add("readmore-btn")
+          readmore.classList.add("text-secondary")
+          readmore.setAttribute("data-id",e)
+          readmore.innerText="ReadMore"
+         d.parentNode.appendChild(readmore)
         })
         
         $(".c-name").each(function(e,data){
@@ -877,7 +886,73 @@ margin-bottom: 8px !important;
       
         })
        })
-      </script>
+
+
+       
+$(".readmore-btn").click(function(){
+let id=$(this).attr("data-id")
+let parentElement =document.getElementsByClassName("video-description")
+if($(this).text()==="ReadMore"){
+resetdesc[id]=parentElement[id].innerText
+parentElement[id].innerHTML=descArray[id]
+$(this).text("ReadLess")
+ }else{
+    parentElement[id].innerText=resetdesc[id]
+$(this).text("ReadMore")
+
+  }
+
+       })
+
+  
+</script>
+<!-- pagination for gallery -->
+<script>
+const parentElement = document.querySelector('.gallery-item').children;
+let totalItemPerPage=8;
+let currentPage=1;
+function pagination(){
+$(".totalPageCount").text(Math.ceil(parentElement.length/totalItemPerPage))
+for(let i=0;i<parentElement.length;i++){
+  if(i>=totalItemPerPage*(currentPage-1) && i < currentPage * totalItemPerPage){
+    parentElement[i].style.display="block";
+  }else{
+ parentElement[i].style.display="none";
+  }
+}
+$(".cPageCount").text(currentPage)
+
+if(currentPage==1){
+  $(".left-btn").attr("disabled",true)
+}else{
+  $(".left-btn").attr("disabled",false)
+}
+if(currentPage==Math.ceil(parentElement.length/totalItemPerPage)){
+  $(".right-btn").attr("disabled",true)
+}else{
+  $(".right-btn").attr("disabled",false)
+}
+}
+pagination();
+
+$(".left-btn").click(function(){
+  if(currentPage>1)
+  currentPage--
+
+
+  pagination();
+})
+$(".right-btn").click(function(){
+  if(currentPage<Math.ceil(parentElement.length/totalItemPerPage))
+  currentPage++;
+  pagination();
+
+})
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+  integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+  data-cf-beacon='{"rayId":"8bdce1fa5c5a5951","version":"2024.8.0","serverTiming":{"name":{"cfL4":true}},"token":"cd0b4b3a733644fc843ef0b185f98241","b":1}'
+  crossorigin="anonymous"></script>
 </body>
 
 <script>
@@ -886,11 +961,24 @@ const params = new URLSearchParams(window.location.search);
 const name = params.get('type');
 if(name=="comment"){
     $(".comments").show();
+    $("#header-detail").html("<i class='fas fa-comments' style='color: #cfd2d8;'></i> Comments")
 }else{
     $(".comments").hide()
 }
+if(name=="video"){
+    $(".videos").show();
+    $("#header-detail").html("<i class='fab fa-youtube' style='color: #cfd2d8;'></i> Videos")
 
+}else{
+    $(".videos").hide()
+}
+if(name=="gallery"){
+    $(".gallery").show();
+    $("#header-detail").html("<svg fill='#cfd2d8' height='40' width='40' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'><path d='M384 121.9V128H256V0h6.1a24 24 0 0 1 17 7l97.9 97.9a24 24 0 0 1 7 17zM248 160c-13.2 0-24-10.8-24-24V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248zm-135.5 16c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm208 240h-256l.5-48.5L104.5 328c4.7-4.7 11.8-4.2 16.5 .5L160.5 368 264.1 264.5c4.7-4.7 12.3-4.7 17 0L320.5 304v112z'/></svg> Image Gallery")
+
+}else{
+    $(".gallery").hide()
+}
 </script>
-<!-- Mirrored from preview.colorlib.com/theme/capitalshop/pro-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:17:48 GMT -->
 
 </html>
